@@ -1,0 +1,32 @@
+{
+  "name": "projet-web-tbm",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.com/FrancoisAudoy/projet-web-tbm.svg?branch=master)](https://travis-ci.com/FrancoisAudoy/projet-web-tbm)",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrancoisAudoy/projet-web-tbm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrancoisAudoy/projet-web-tbm/issues"
+  },
+  "homepage": "https://github.com/FrancoisAudoy/projet-web-tbm#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongodb": "^3.1.10",
+    "morgan": "^1.9.1"
+  }
+}
