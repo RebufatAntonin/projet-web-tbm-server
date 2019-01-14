@@ -7,7 +7,7 @@
     "doc": "doc"
   },
   "scripts": {
-    "start": "node back/src/js/Server.js"
+    "start": "node back/src/js/Server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
