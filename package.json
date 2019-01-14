@@ -2,16 +2,17 @@
   "name": "projet-web-tbm",
   "version": "1.0.0",
   "description": "[![Build Status](https://travis-ci.com/FrancoisAudoy/projet-web-tbm.svg?branch=master)](https://travis-ci.com/FrancoisAudoy/projet-web-tbm)",
-  "main": "index.js",
+  "main": "Server.js",
   "directories": {
     "doc": "doc"
   },
   "scripts": {
+    "start": "node back/src/js/Server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FrancoisAudoy/projet-web-tbm.git"
+    "url": "git+https://github.com/RebufatAntonin/projet-web-tbm-server.git"
   },
   "keywords": [],
   "author": "",
