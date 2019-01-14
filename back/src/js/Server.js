@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const morgan=require('morgan');
 const jwt    = require('jsonwebtoken');
 const cors=require('cors');
 const config=require('./Config');
@@ -10,7 +9,6 @@ app.listen(process.env.PORT ||3000, function(){
 });
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-app.use(morgan('dev'));
 app.use(cors());
 
 app.use('/user', require('./ServerUser'));

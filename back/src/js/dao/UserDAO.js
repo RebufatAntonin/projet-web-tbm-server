@@ -13,7 +13,7 @@ module.exports= class UserDAO{
 
   async save(user){
     let col=await this.connect();
-    let inBase=await col.findOne({"_pseudo":user.pseudo, "_email":user.email});
+    let inBase=await col.findOne({"_email":user.email});
     let usr=null;
     if(inBase==null){
       user.password=config.hash(user.password);
