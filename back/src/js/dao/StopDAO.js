@@ -19,7 +19,7 @@ module.exports= class StopDAO{
       await col.insertOne(stop);
     }
     let tmp=await col.findOne({"_id":stop.id});
-    stop2=new Stop(tmp._id, tmp._name, tmp._direction);
+    stop2=new Stop(tmp._id, tmp._name, tmp._line, tmp._direction);
     client.close();
     return stop2;
   }
@@ -29,7 +29,7 @@ module.exports= class StopDAO{
     let inBase=await col.findOne({"_id":id});
     let stop=null;
     if(inBase!=null){
-      stop=new Stop(inBase._id, inBase._name, inBase._direction);
+      stop=new Stop(inBase._id, inBase._name, inBase._line, inBase._direction);
     }
     client.close();
     return stop;

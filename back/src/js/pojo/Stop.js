@@ -1,8 +1,9 @@
 class Stop{
 
-  constructor(id, name, direction){
+  constructor(id, name, line, direction){
     this._id=id;
     this._name=name;
+    this._line=line;
     this._direction=direction;
   }
 
@@ -12,6 +13,10 @@ class Stop{
 
   set name(name){
     this._name=name;
+  }
+
+  set line(line){
+    this._line=line;
   }
 
   set direction(direction){
@@ -24,6 +29,10 @@ class Stop{
 
   get name(){
     return this._name;
+  }
+
+  get line(){
+    return this._line;
   }
 
   get direction(){
