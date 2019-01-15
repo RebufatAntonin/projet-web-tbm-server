@@ -20,7 +20,6 @@ module.exports=class StopUtils{
   async getStop(id){
     id=parseInt(id);
     let stop=await this._stopDao.find(id);
-    console.log(stop.line);
     return stop;
   }
 
